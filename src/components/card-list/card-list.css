@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.card-list {
+  width: 85vw;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card-list-india {
+  width: 85vw;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+.card-container {
+  color: #0f0f0f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  border-bottom: 5px solid #9e9e9e;
+}
+
+
+.card-container-india {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #4d4d4d;
+  background-image: url("https://www.frazierdeeter.com/wp-content/uploads/2020/03/COVID-19-Resource-Center-virus-background.png");
+  background-size: cover;
+  background-position: left bottom; 
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.newcase {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.new-r-case {
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+}
+
+.new-g-case {
+  font-size: 12px;
+  font-weight: bold;
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .card-list {
+    width: 100%;
+    display: block;
+  }
+
+  .card-list-india {
+    width: 100%;
+    display: block;
+  }
+
+  .card-container, .card-container-india {
+    margin: 20px;
+  }
+}
+
+.flag {
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+}

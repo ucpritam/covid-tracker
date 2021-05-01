@@ -1,0 +1,18 @@
+input[type=search] {
+    font-size: 16px;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 0px;
+    display: inline-block;
+    border: 2px solid #9e9e9e;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+
+    input[type=search] {
+        width: 85vw;
+    }
+
+}
