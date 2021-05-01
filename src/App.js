@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       covid: [],
       covidindia: [],
-      length: 1,
+      length: 0,
       india: [],
       vaccine: [],
       input: ''
