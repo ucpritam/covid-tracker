@@ -47,7 +47,7 @@ class App extends Component {
      <div className='App'>
         <Title />
         <Search 
-          placeholder = 'Search here'
+          placeholder = 'Search by state'
           handleChange = {this.handleChange}
         />
         <CardIndia 
