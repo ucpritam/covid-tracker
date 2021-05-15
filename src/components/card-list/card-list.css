@@ -2,12 +2,28 @@
   box-sizing: border-box;
 }
 
+p,
+.state-name {
+  margin: 1px;
+  font-weight: 500;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
 .card-list {
   width: 85vw;
   margin: 20px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-gap: 0px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-list-india {
@@ -18,35 +34,31 @@
   grid-gap: 20px;
 }
 
-
 .card-container {
   color: #0f0f0f;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #ffffff;
-  border-radius: 10px;
   cursor: pointer;
-  border-bottom: 5px solid #9e9e9e;
+  border-bottom: 1px solid #c5c5c5;
 }
-
 
 .card-container-india {
   color: white;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 20px;
   text-align: center;
   background-color: #4d4d4d;
-  background-image: url("https://www.frazierdeeter.com/wp-content/uploads/2020/03/COVID-19-Resource-Center-virus-background.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(bg.png);
   background-size: cover;
-  background-position: left bottom; 
+  background-position: left bottom;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.card-container:hover {
+.card-list:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -68,10 +80,41 @@
   color: green;
 }
 
+.total-num {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 30px 0px 20px 0px;
+}
+
 @media screen and (max-width: 600px) {
+  p,
+  .p1,
+  .new-r-case,
+  .new-g-case {
+    font-size: 11px;
+  }
+
+  .state-name {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
   .card-list {
     width: 100%;
     display: block;
+    padding: 0px;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
 
   .card-list-india {
@@ -79,8 +122,18 @@
     display: block;
   }
 
-  .card-container, .card-container-india {
+  .card-container {
+    margin: 0px;
+    padding: 20px 2px;
+  }
+
+  .card-container-india {
     margin: 20px;
+  }
+
+  .total-num {
+    font-weight: bold;
+    font-size: 22px;
   }
 }
 

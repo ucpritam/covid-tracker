@@ -1,3 +1,12 @@
+.credit {
+  margin: 10px 0px 20px 0px;
+}
+
 .title {
-    color: green;
+  color: green;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
