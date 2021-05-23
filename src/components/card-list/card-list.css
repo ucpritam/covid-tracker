@@ -102,6 +102,7 @@ h3 {
   .new-r-case,
   .new-g-case {
     font-size: 11px;
+    display: block;
   }
 
   .state-name {
