@@ -23,7 +23,7 @@ class App extends Component {
     fetch('https://api.covid19india.org/data.json')
     .then(response => response.json())
     .then(users => {
-      this.setState({length: users.cases_time_series.length})
+      this.setState({length: users.cases_time_series.length}) //length
       this.setState({india: users.cases_time_series[users.cases_time_series.length-1]})
       this.setState({covid: users.statewise.slice(1,users.statewise.length).sort((a, b) => b.confirmed - a.confirmed)})
       this.setState({vaccine: users.tested[users.tested.length-1]})
