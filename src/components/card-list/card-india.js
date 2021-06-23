@@ -11,7 +11,7 @@ export const CardIndia = (props) => {
             <img
               alt="India"
               src={
-                "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/188px-Flag_of_India.svg.png"
+                "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/188px-Flag_of_India.svg.png" //indian flag
               }
               className="flag"
             />
