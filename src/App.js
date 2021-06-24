@@ -28,7 +28,7 @@ class App extends Component {
       this.setState({covid: users.statewise.slice(1,users.statewise.length).sort((a, b) => b.confirmed - a.confirmed)}) //statewise data
       this.setState({vaccine: users.tested[users.tested.length-1]}) //vaccine data
       this.setState({covidindia: users.statewise}) //state data
-      this.setState({dailycases: users.cases_time_series[this.state.length-1].dailyconfirmed})
+      this.setState({dailycases: users.cases_time_series[this.state.length-1].dailyconfirmed}) //dailycases
     }
     );
   }
