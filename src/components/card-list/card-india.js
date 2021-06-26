@@ -20,8 +20,7 @@ export const CardIndia = (props) => {
             <div>
               {"Confirmed  "}
               <div className="total-num">
-                { covid.confirmed>=0 ?
-                  (covid.confirmed*1).toLocaleString('en-IN') : "Loading.."}
+                {(covid.confirmed*1).toLocaleString('en-IN')}
                 <span className="newcase">
                   {" (+" + (props.india.dailyconfirmed*1).toLocaleString('en-IN') + ")"}
                 </span>
