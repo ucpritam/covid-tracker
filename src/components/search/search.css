@@ -10,7 +10,7 @@ input[type=search] {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
 
     input[type=search] {
         width: 85vw;

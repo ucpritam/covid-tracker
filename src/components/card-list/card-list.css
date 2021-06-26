@@ -25,7 +25,6 @@ h3 {
   grid-template-columns: 1fr;
   grid-gap: 0px;
   background-color: #ffffff;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -44,7 +43,8 @@ h3 {
   text-align: center;
   background-color: #ffffff;
   cursor: pointer;
-  border-bottom: 1px solid #c5c5c5;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 10px;
 }
 
 .card-container-india {
@@ -92,11 +92,11 @@ h3 {
 .card-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  margin: 30px 0px 20px 0px;
+  grid-gap: 40px;
+  margin: 30px 0px 40px 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   p,
   .p1,
   .new-r-case,
@@ -144,6 +144,10 @@ h3 {
 
   .card-body {
     grid-gap: 40px;
+  }
+
+  .newcase {
+    display: block;
   }
 }
 

@@ -24,32 +24,32 @@ export const CardList = (props) => {
                   <div className="box">
                     <span className="state-name">{covid.state}</span>
                     <p>
-                      {covid.confirmed}
+                      {(covid.confirmed*1).toLocaleString('en-IN')}
                       <span className="new-r-case">
-                        {" (+" + covid.deltaconfirmed + ")"}
+                        {" (+" + (covid.deltaconfirmed*1).toLocaleString('en-IN') + ")"}
                       </span>
                     </p>
                     <p>
-                      {covid.recovered}
+                      {(covid.recovered*1).toLocaleString('en-IN')}
                       <span className="new-g-case">
-                        {" (+" + covid.deltarecovered + ")"}
+                        {" (+" + (covid.deltarecovered*1).toLocaleString('en-IN') + ")"}
                       </span>
                     </p>
                     <p>
-                      {covid.deaths}
+                      {(covid.deaths*1).toLocaleString('en-IN')}
                       <span className="new-r-case">
-                        {" (+" + covid.deltadeaths + ")"}
+                        {" (+" + (covid.deltadeaths*1).toLocaleString('en-IN') + ")"}
                       </span>
                     </p>
-                    <p>{covid.active}</p>
+                    <p>{(covid.active*1).toLocaleString('en-IN')}</p>
                   </div>
                 ) : (
                   <div className="box">
                     <span className="state-name">{covid.state}</span>
-                    <p>{covid.confirmed}</p>
-                    <p>{covid.recovered}</p>
-                    <p>{covid.deaths}</p>
-                    <p>{covid.active}</p>
+                    <p>{(covid.confirmed*1).toLocaleString('en-IN')}</p>
+                    <p>{(covid.recovered*1).toLocaleString('en-IN')}</p>
+                    <p>{(covid.deaths*1).toLocaleString('en-IN')}</p>
+                    <p>{(covid.active*1).toLocaleString('en-IN')}</p>
                   </div>
                 )}
               </div>

@@ -20,33 +20,33 @@ export const CardIndia = (props) => {
             <div>
               {"Confirmed  "}
               <div className="total-num">
-                {covid.confirmed}
+                {(covid.confirmed*1).toLocaleString('en-IN')}
                 <span className="newcase">
-                  {" (+" + props.india.dailyconfirmed + ")"}
+                  {" (+" + (props.india.dailyconfirmed*1).toLocaleString('en-IN') + ")"}
                 </span>
               </div>
             </div>
             <div>
               {"Recovered  "}
               <div className="total-num">
-                {covid.recovered}
+                {(covid.recovered*1).toLocaleString('en-IN')}
                 <span className="newcase">
-                  {" (+" + props.india.dailyrecovered + ")"}
+                  {" (+" + (props.india.dailyrecovered*1).toLocaleString('en-IN') + ")"}
                 </span>
               </div>
             </div>
             <div>
               {"Deaths  "}
               <div className="total-num">
-                {covid.deaths}
+                {(covid.deaths*1).toLocaleString('en-IN')}
                 <span className="newcase">
-                  {" (+" + props.india.dailydeceased + ")"}
+                  {" (+" + (props.india.dailydeceased*1).toLocaleString('en-IN') + ")"}
                 </span>
               </div>
             </div>
             <div>
               {"Active  "}
-              <div className="total-num">{covid.active}</div>
+              <div className="total-num">{(covid.active*1).toLocaleString('en-IN')}</div>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export const CardIndia = (props) => {
           <div>
             {"At least 1 dose  "}
             <div className="total-num">
-              {props.vaccine.totalindividualsvaccinated}
+              {(props.vaccine.totalindividualsvaccinated*1).toLocaleString('en-IN')}
               <span className="newcase">
                 {" (" +
                   (
@@ -79,7 +79,7 @@ export const CardIndia = (props) => {
           <div>
             {"Fully vaccinated  "}
             <div className="total-num">
-              {props.vaccine.seconddoseadministered}
+              {(props.vaccine.seconddoseadministered*1).toLocaleString('en-IN')}
               <span className="newcase">
                 {" (" +
                   (props.vaccine.seconddoseadministered / 13955700).toPrecision(
@@ -93,9 +93,9 @@ export const CardIndia = (props) => {
         <div>
           {"Samples tested  "}
           <div className="total-num">
-            {props.vaccine.totalsamplestested}
+            {(props.vaccine.totalsamplestested*1).toLocaleString('en-IN')}
             <span className="newcase">
-              {" (+" + props.vaccine.samplereportedtoday + ")"}
+              {" (+" + (props.vaccine.samplereportedtoday*1).toLocaleString('en-IN') + ")"}
             </span>
           </div>
         </div>
