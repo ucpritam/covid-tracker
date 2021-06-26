@@ -139,7 +139,8 @@ h3 {
 
   .total-num {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
+    padding-top: 8px;
   }
 
   .card-body {
@@ -148,6 +149,7 @@ h3 {
 
   .newcase {
     display: block;
+    font-size: 14px;
   }
 }
 
