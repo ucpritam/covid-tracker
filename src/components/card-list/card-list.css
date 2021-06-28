@@ -18,6 +18,11 @@ h3 {
   grid-gap: 50px;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .card-list {
   width: 85vw;
   margin: auto;
@@ -43,7 +48,6 @@ h3 {
   background-color: #ffffff;
   cursor: pointer;
   border-bottom: 1px solid #e6e6e6;
-  border-radius: 10px;
 }
 
 .card-container-india {
@@ -59,10 +63,6 @@ h3 {
   background-position: left bottom;
   border-radius: 10px;
   cursor: pointer;
-}
-
-.card-list:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .newcase {

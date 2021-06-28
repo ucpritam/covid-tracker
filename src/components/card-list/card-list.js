@@ -5,7 +5,7 @@ import "./card-list.css";
 export const CardList = (props) => {
   return (
     <div className="card-list">
-      <div className="card-container">
+      <div className="card-container sticky">
         <div className="box">
           <span className="p1">{"State"}</span>
           <span className="p1">{"Confirmed"}</span>
