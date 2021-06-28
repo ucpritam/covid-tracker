@@ -5,3 +5,16 @@ h3 {
      margin-top: 10px;
      margin-bottom: 20px;
 }
+.list {
+    background-color: white;
+    width: 85vw;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+    .list {
+        width: 100%;
+    }
+}

@@ -46,19 +46,21 @@ class App extends Component {
     return (
      <div className='App'>
         <Title />
-        <Search 
-          placeholder = 'Search by state'
-          handleChange = {this.handleChange}
-        />
         <CardIndia 
           covid={this.state.covidindia}
           india={this.state.india}
           vaccine={this.state.vaccine}
           length={this.state.length}
         />
+        <div className='list'>
+        <Search 
+          placeholder = 'Search by state'
+          handleChange = {this.handleChange}
+        />
         <CardList 
           covid={filteredInput}
         />
+        </div>   
      </div>
     )
   } 
