@@ -24,7 +24,7 @@ class App extends Component {
     .then(response => response.json())
     .then(users => {
       this.setState({length: users.cases_time_series.length}) //length
-      this.setState({india: users.cases_time_series[users.cases_time_series.length-1]})
+      this.setState({india: users.cases_time_series[users.cases_time_series.length-1]}) //india data
       this.setState({covid: users.statewise.slice(1,users.statewise.length).sort((a, b) => b.confirmed - a.confirmed)})
       this.setState({vaccine: users.tested[users.tested.length-1]})
       this.setState({covidindia: users.statewise})
