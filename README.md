@@ -1,4 +1,4 @@
-
+![Screenshot](./assets/covid.png)
 
 # Getting Started with Create React App
 
