@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://api.covid19india.org/data.json')
+    fetch('https://data.covid19india.org/data.json')
     .then(response => response.json())
     .then(users => {
       this.setState({length: users.cases_time_series.length}) //length
