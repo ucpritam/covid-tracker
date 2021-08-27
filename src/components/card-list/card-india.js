@@ -67,11 +67,11 @@ export const CardIndia = (props) => {
           <div>
             {"At least 1 dose  "}
             <div className="total-num">
-              {(props.vaccine.totalindividualsvaccinated*1).toLocaleString('en-IN')}
+              {(props.vaccine.firstdoseadministered*1).toLocaleString('en-IN')}
               <span className="newcase">
                 {" (" +
                   (
-                    props.vaccine.totalindividualsvaccinated / 13955700
+                    props.vaccine.firstdoseadministered / 13955700
                   ).toPrecision(3) +
                   "%)"}
               </span>
